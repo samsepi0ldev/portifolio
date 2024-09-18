@@ -55,7 +55,7 @@ export default function SectionProjects() {
       <div className='grid grid-cols-3 auto-rows-[280px] gap-6'>
         {isPending && !repos ? (
           Array.from({ length: 6 }, (_, i) => (
-            <div className='w-[330px] block rounded-xl bg-base-gray-300 space-y-5 p-3 animate-pulse' />
+            <div key={i} className='w-[330px] block rounded-xl bg-base-gray-300 space-y-5 p-3 animate-pulse' />
           ))
         ) : (
           repos?.filter((_, i) => i <= 5).map(repo => (
