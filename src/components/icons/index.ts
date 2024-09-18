@@ -1,0 +1,6 @@
+export * from './css-icon'
+export * from './github'
+export * from './html-icon'
+export * from './javascript-icon'
+export * from './node-js-icon'
+export * from './react-icon'
